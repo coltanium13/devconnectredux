@@ -13,6 +13,8 @@ import setAuthToken from './utils/setAuthToken';
 
 import './App.css';
 
+//TODO: use redux hooks
+
 const App = () => {
   useEffect(() => {
     // check for token in LS and load user
