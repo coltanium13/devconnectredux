@@ -28,6 +28,31 @@ const ProfileSchema = new mongoose.Schema({
   githubusername: {
     type: String
   },
+  games: [
+    {
+      title: {
+        type: String,
+        required: true
+      },
+      status: {
+        type: String,
+        required: true
+      },
+      description: {
+        type: String
+      },
+      notes: {
+        type: String
+      },
+      finishedDate: {
+        type: Date
+      },
+      current: {
+        type: Boolean,
+        default: false
+      }
+    }
+  ],
   experience: [
     {
       title: {
