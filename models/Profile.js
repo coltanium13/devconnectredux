@@ -36,6 +36,8 @@ const ProfileSchema = new mongoose.Schema({
       },
       status: {
         type: String,
+        enum: ['playing', 'backlog', 'played'],
+        default: 'backlog',
         required: true
       },
       description: {
